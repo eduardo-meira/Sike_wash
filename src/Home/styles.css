@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #d8d8d8;
+
+  h3,
+  b {
+    color: #0984e3;
+  }
+}
+
+.eletric-blue {
+  background-color: #cdcdcd;
+}
+
+.montserrat {
+  font-family: "Montserrat", serif;
+}
+
+.nossos-servicos {
+  display: flex;
+  justify-content: space-evenly;
+
+  div {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nossos-servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+header,
+footer {
+  background-color: #0984e3;
+}
+
+footer {
+  display: flex;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero {
+  height: 600px;
+  background-size: cover;
+  background-image: url("../../imagens/sofa.jpg");
+
+  p {
+    color: #0984e3;
+    font-size: 22px;
+  }
+
+  h2 {
+    color: #ecf0f1;
+    font-size: 54px;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: block;
+
+    ol,
+    ul {
+      padding-left: 0;
+    }
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .links {
+    display: block;
+    padding: none;
+  }
+
+  .nossos-servicos {
+    display: block;
+
+    div {
+      width: 75%;
+      margin: 30px auto;
+    }
+  }
+}
+
+.sobre-nos,
+.reverse {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 38px;
+  font-size: 22px;
+
+  img {
+    width: 300px;
+    height: 420px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sobre-nos {
+    display: block;
+    align-items: center;
+  }
+
+  .txt-main {
+    line-height: 28px;
+    font-size: 18px;
+  }
+}
