@@ -57,7 +57,7 @@ footer {
 .hero {
   height: 600px;
   background-size: cover;
-  background-image: url("../../imagens/sofa.jpg");
+  background-image: url("imagens/sofa.jpg");
 
   p {
     color: #0984e3;
