@@ -57,6 +57,7 @@ footer {
 .hero {
   height: 600px;
   background-size: cover;
+  background-position: center;
   background-image: url("imagens/sofa.jpg");
 
   p {
